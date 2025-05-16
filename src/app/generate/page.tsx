@@ -72,8 +72,9 @@ export default function Explore() {
   const handlePropertyChange = (property: string, value: string | number) => {
     if (!selectedLetter) return;
     
-    const updates: Partial<LetterProps> = {};
-    updates[property as keyof LetterProps] = value;
+    const updates = {
+      [property]: value
+    } as Partial<LetterProps>;
     
     updateLetter(selectedLetter, updates);
   };
