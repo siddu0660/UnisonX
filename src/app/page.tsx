@@ -13,7 +13,10 @@ export default function Home() {
             Create music no matter what
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/generate" className="inline-block bg-gradient-to-r from-purple-500 to-pink-600 text-white font-bold py-3 px-8 rounded-full hover:opacity-90 transition-opacity">
+            <Link
+              href="/generate"
+              className="inline-block bg-gradient-to-r from-purple-500 to-pink-600 text-white font-bold py-3 px-8 rounded-full hover:opacity-90 transition-opacity"
+            >
               Generate
             </Link>
           </div>
